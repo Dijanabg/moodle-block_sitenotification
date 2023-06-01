@@ -21,13 +21,14 @@
  * @copyright Dijana Jovanovic
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
+
 $string['pluginname'] = 'Site Notification block';
-$string['generalheading'] = 'Site notification settings';
-$string['shownotificatin'] = 'Show the Notification block';
+$string['generalheading'] = 'General';
+$string['shownotification'] = 'Show the Notification block';
 $string['blockheading'] = 'Administration setup for Site Notification';
 
 //Admin settings
-$string['adminpagesettings'] = 'Site Notification settings';
+$string['adminpageheading'] = 'Site notification settings';
 $string['notificationmessage'] = 'Type the message';
 $string['notificationcolor'] = 'Notification alert color';
 $string['notificationcolor_desc'] = 'Select a color in which the notification will be desplayed';

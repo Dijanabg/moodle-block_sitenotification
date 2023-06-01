@@ -21,30 +21,24 @@
  * @copyright Dijana Jovanovic
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-defined('MOODLE_INTERNAL') || die();
 
- $capabilities = array(
-
-    'block/sitenotification:myaddinstance' => array(
+$capabilities = [
+    'block/pluginname:myaddinstance' => [
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
-        'archetypes' => array(
+        'archetypes' => [
             'user' => CAP_ALLOW
-        ),
-
+        ],
         'clonepermissionsfrom' => 'moodle/my:manageblocks'
-    ),
-
-    'block/sitenotification:addinstance' => array(
+    ],
+    'block/pluginname:addinstance' => [
         'riskbitmask' => RISK_SPAM | RISK_XSS,
-
         'captype' => 'write',
         'contextlevel' => CONTEXT_BLOCK,
-        'archetypes' => array(
+        'archetypes' => [
             'editingteacher' => CAP_ALLOW,
             'manager' => CAP_ALLOW
-        ),
-
+        ],
         'clonepermissionsfrom' => 'moodle/site:manageblocks'
-    ),
-);
+    ],
+];
